@@ -1,0 +1,40 @@
+import {Text, View } from 'react-native';
+import estilo from './Css/estilo'
+import image from './img.js/imgFaculdade'
+
+export default function Teste(){
+  return(
+    <View style={estilo.fundo}>
+       <Text style={estilo.titulo}>Suzano</Text>
+        <Text style={estilo.titulo}>Faculdade Piaget</Text>
+    </View>)
+}
+  
+   
+
+#CSS
+
+
+
+import{StyleSheet} from 'react-native';
+
+const estilo = StyleSheet.create({
+ fundo:{
+   width:350,
+   height:200,
+   backgroundColor:'#1E90FF',
+   alignSelf:'center',
+   borderWidth:2,
+},
+titulo:{
+  fontSize:40,
+  color:'#F0FFFF',
+  textAlign:'center',
+}
+});
+
+export default estilo;
+
+
+
+
