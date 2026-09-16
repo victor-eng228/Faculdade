@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deltarune - Personagens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌙 Deltarune - Personagens Principais</h1>
+    <p>Conheça os heróis dessa jornada incrível!</p>
+  </header>
+
+  <main>
+    <section class="personagem" id="kris">
+      <img src="https://static.wikia.nocookie.net/deltarune/images/4/4f/Kris_Battle_Portrait.png" alt="Kris">
+      <h2>Kris</h2>
+      <p>The first Hero. the cage with soul and parts</p>
+    </section>
+
+    <section class="personagem" id="susie">
+      <img src="" alt="Susie">
+      <h2>Susie</h2>
+      <p>And last, was the Girl. at last was the Girl</p>
+    </section>
+
+    <section class="personagem" id="ralsei">
+      <img src="https://static.wikia.nocookie.net/deltarune/images/5/5e/Ralsei_Battle_Portrait.png" alt="Ralsei">
+      <h2>Ralsei</h2>
+      <p>The third Hero. The prince, alone in deepest dark</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito por um fã de Deltarune 💫</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
