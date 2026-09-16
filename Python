@@ -1,0 +1,33 @@
+# Lista de computadores disponíveis
+computadores = ["PC 1", "PC 2", "PC 3"]
+
+# Exibe os computadores disponíveis
+print("Computadores disponíveis:")
+
+# Percorre a lista e mostra cada computador
+for pc in computadores:
+    print(pc)
+
+# Usuário escolhe um computador
+escolha = input("\nDigite o nome do computador que deseja usar: ")
+
+# Verifica se o computador está disponível
+if escolha in computadores:
+
+    # Remove o computador da lista, simulando o uso do recurso
+    computadores.remove(escolha)
+
+    # Exibe mensagem de acesso liberado
+    print("Recurso compartilhado com sucesso!")
+
+else:
+
+    # Exibe mensagem caso o recurso não esteja disponível
+    print("Computador indisponível!")
+
+# Mostra os recursos restantes
+print("\nRecursos ainda disponíveis:")
+
+# Exibe os computadores restantes
+for pc in computadores:
+    print(pc)
