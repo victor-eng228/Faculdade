@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>🌙 Deltarune - Personagens Principais</h1>
+    <h1> Deltarune - Personagens Principais</h1>
     <p>Conheça os heróis dessa jornada incrível!</p>
   </header>
 
@@ -33,9 +33,114 @@
   </main>
 
   <footer>
-    <p>Feito por um fã de Deltarune 💫</p>
+    <p>Feito por um fã de Deltarune </p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+#CSS
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  background-image: radial-gradient(blue, black);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #222;
+  padding: 20px;
+  border-bottom: 2px solid #555;
+}
+
+h1 {
+  color: #00bfff;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.personagem {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  width: 280px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.personagem img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.personagem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00bfff;
+}
+
+footer {
+  background-color: #111;
+  padding: 15px;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
+}
+
+
+
+
+
+
+
+
+#Js 
+
+#Música
+const musica = document.getElementById("musica");
+const btn = document.getElementById("musicBtn");
+let tocando = false;
+
+btn.addEventListener("click", () => {
+  if (!tocando) {
+    musica.play();
+    btn.textContent = "Pausar Música";
+    tocando = true;
+  } else {
+    musica.pause();
+    btn.textContent = "Tocar Música";
+    tocando = false;
+  }
+});
+
+// Partículas suaves
+const particles = document.getElementById("particles");
+const totalParticles = 60;
+
+for (let i = 0; i < totalParticles; i++) {
+  const star = document.createElement("div");
+  star.classList.add("star");
+
+  const size = Math.random() * 3 + 1;
+  const x = Math.random() * window.innerWidth;
+  const y = Math.random() * window.innerHeight;
+
+  star.style.width = size + "px";
+  star.style.height = size + "px";
+  star.style.left = x + "px";
+  star.style.top = y + "px";
+
+  particles.appendChild(star);
+}
