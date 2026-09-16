@@ -1,0 +1,16 @@
+#peso ideal - formula de devine
+
+
+#Entrada de dados
+altura = float(input("Digite sua altura: "))
+sexo = input("Digite o sexo: ")
+
+#Processamento
+if sexo == "Masculino":
+    peso_ideal = 50 + 2.3 * ((altura - 152.4) / 2.54)
+elif sexo == "Feminino":
+    peso_ideal = 45.5 + 2.3 * ((altura - 152.4) / 2.54)
+    exit()
+
+# Saída de dados
+print(f"O peso ideal é: {peso_ideal:.2f} kg")
